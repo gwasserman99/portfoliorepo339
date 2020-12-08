@@ -41,6 +41,16 @@ nav a:hover{
   text-decoration: underline;
 }
 
+.nameoficon{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  display: none;
+}
+
 .topnav {
   overflow: hidden;
   background-color: #333;
