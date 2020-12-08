@@ -281,7 +281,7 @@ footer{
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   text-align: center;
-  background-image: url("/images/marble.jpg");
+  background-image: url("../images/marble.jpg");
   overflow: hidden;
   height: 300px;
 }
