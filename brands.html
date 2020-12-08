@@ -6,10 +6,12 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/brands.css">
     <title>Style Website</title>
+    <script src="https://kit.fontawesome.com/35c1879a66.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
-    <nav>
+    <nav class="bignav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a class='current' href="brands.html">Brands</a></li>
@@ -17,9 +19,25 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       </nav>
+
+
+      <div class="topnav">
+        <a href="brands.html" class="active">Brands</a>
+        <div id="myLinks">
+          <a href="index.html">The Style Guide Home</a>
+          <a href="outfits.html">Outfits</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+
     <main class="container" id="main">
       
-
+      
+      
     <div class="intro">
       <div class="textbox">
       <h1>Where to Shop</h1>
@@ -31,36 +49,122 @@
   
 
   <div class="brandarea">
-    <div class="card">
-      <header>
-        <h2>Aritzia</h2>
-        <p>Affordable and elegant</p>
-      </header>
-      <img src="/images/aritzia.jpg" alt="aritzia">
-      <button>Shop Now</button>
-    </div>
-    <div class="card">
-      <header>
-        <h2>Allsaints</h2>
-        <p>Edgy and chic</p>
-      </header>
-      <img src="/images/allsaints.png" alt="allsaints">
-      <button>Shop Now</button>
-    </div>
-    <div class="card">
-      <header>
-        <h2>For Love & Lemons</h2>
-        <p>Girly and timeless</p>
-      </header>
-      <img src="/images/forlove.png" alt="forloveandlemons">
-      <button>Shop Now</button>
-    </div>
+    
+    
+    <div class="maincontainer">
+      <div class="thecard">
+      <div class="card1">
+        <header>
+          <h2>Aritzia</h2>
+          <p>Affordable and elegant</p>
+        </header>
+        <img src="/images/aritzia.jpg" alt="aritzia">
+        
+      </div>
+      <div class="theback">
+
+        
+        
+        <a href="https://aritzia.com" class="go">SHOP Aritzia</a>
+  
+      </div>
+      </div>
+      </div>
+  
+  
+      <div class="maincontainer">
+        <div class="thecard">
+        <div class="card1">
+          <header>
+            <h2>Allsaints</h2>
+            <p>Edgy and Chic</p>
+          </header>
+          <img src="/images/allsaints.png" alt="aritzia">
+          
+        </div>
+        <div class="theback">
+
+        
+        
+          <a href="https://allsaints.com" class="go">SHOP Allsaints</a>
+    
+        </div>
+        </div>
+        </div>
+  
+  
+        <div class="maincontainer">
+          <div class="thecard">
+          <div class="card1">
+            <header>
+              <h2>For Love and Lemons</h2>
+              <p>Girly and Timeless</p>
+            </header>
+            <img src="/images/forlove.png" alt="aritzia">
+            
+          </div>
+          <div class="theback">
+
+        
+        
+            <a href="https://forloveandlemons.com" class="go">SHOP For Love and Lemons</a>
+      
+          </div>
+          </div>
+          </div>
+
+
   </div>
+
+
+<div class="gridcontainer">
+  <div id="black" class="blackowned">
+  <h2 class="mintitle">Black-owned brands</h2>
+    <ul class="minoritylist">
+          <li><span class="fa-li"><i class="fas fa-heart"></i></i></span>Renowned LA</li>
+          <li><span class="fa-li"><i class="fas fa-heart"></i></i></span>All Caps Studio</li>
+          <li><span class="fa-li"><i class="fas fa-heart"></i></i></span>Armando Cabral</li>
+
+    </ul>
+  </div>
+
+  <div id="female" class="blackowned">
+    <h2 class="mintitle">Female-owned brands</h2>
+    <ul class="minoritylist">
+          <li><span class="fa-li"><i class="fas fa-heart"></i></i></span>Mother of Pearl</li>
+          <li><span class="fa-li"><i class="fas fa-heart"></i></i></span>Adeam</li>
+          <li><span class="fa-li"><i class="fas fa-heart"></i></i></span>Sidway Swim</li>
+    </ul>
+  </div>
+
+  <div id="lgbt" class="blackowned">
+    <h2 class="mintitle">LGBTQ+-owned brands</h2>
+    <ul class="minoritylist">
+          <li><span class="fa-li"><i class="fas fa-heart"></i></i></span>Automic Gold</li>
+          <li><span class="fa-li"><i class="fas fa-heart"></i></i></span>XYST Ugli</li>
+          <li><span class="fa-li"><i class="fas fa-heart"></i></i></span>Rebirth Garments</li>
+
+
+    </ul>
+  </div>
+
+</div>
+
 </main>
 
     <footer>
       <p>Made By Gillian Wasserman <br/>
         &copy; SI 339 2020-2021</p>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
