@@ -21,6 +21,15 @@ h2{
   line-height: 1.5;
 }
 
+.nameoficon{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  display: none;
+}
 
 .topnav {
   overflow: hidden;
@@ -216,7 +225,7 @@ footer{
   height: 100%;
   backface-visibility: hidden;
   background: tan;
-  color: #fff;
+  color:black;
   transform: rotateY(180deg);
   text-align: center;
 }
@@ -271,7 +280,9 @@ footer{
 }
 
 
-
+.theback a{
+  color: black;
+}
 
 
 .intro{
@@ -451,6 +462,7 @@ preferences to reduce motion.*/
 
     .theback a{
       font-size: 25pt;
+      color: black;
     }
 
     .gridcontainer{
