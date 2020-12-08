@@ -6,10 +6,12 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/outfits.css">
     <title>Style Website</title>
+    <script src="https://kit.fontawesome.com/35c1879a66.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
-    <nav>
+    <nav class="bignav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="brands.html">Brands</a></li>
@@ -17,7 +19,20 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       </nav>
-    <main class="container" id="main">
+
+      <div class="topnav">
+        <a href="outfits.html" class="active">Outfits</a>
+        <div id="myLinks">
+          <a href="index.html">The Style Guide Home</a>
+          <a href="brands.html">Brands</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+    <main id="main">
       
     
 
@@ -28,6 +43,8 @@
     </div>
     </div>
 
+    <div class="container">
+
     <div class="look1about">
         <h2>Brunch</h2>
         <p>This look is perfect for brunch or a night out. Style with flats or heels, or cool sneakers an a blazer.</p>
@@ -37,7 +54,7 @@
       <img src="/images/top1.jpg" alt=""/>
     </div>
 
-    <div class="plus">
+    <div id = 'pluses' class="plus">
         <p>+</p>
     </div>
 
@@ -55,7 +72,7 @@
         <img src="/images/top2.jpg" alt=""/>
       </div>
   
-      <div class="plusnext">
+      <div id = 'pluses' class="plusnext">
           <p>+</p>
       </div>
   
@@ -66,13 +83,13 @@
       <div class="look3about">
         <h2>Night Out</h2>
         <p>Nothing sleeker than a blazer dress. This cut-out dress by Jaquemus pairs perfectly with square toe sandals from Zara.</p>
-    </div>
+      </div>
 
       <div class="toplast">
         <img src="/images/dress.jpg" alt=""/>
       </div>
   
-      <div class="pluslast">
+      <div id = 'pluses' class="pluslast">
           <p>+</p>
       </div>
   
@@ -80,11 +97,16 @@
           <img src="/images/shoes.jpg" alt=""/>
       </div>
 
+      <div class="look4about">
+        <h2>Chill Day</h2>
+        <p>Pair a patterned mini dress with some funky sneakers. Perfect for day time, especially on a hot day.</p>
+      </div>
+      
       <div class="topfourth">
         <img src="/images/daydress.jpg" alt=""/>
       </div>
   
-      <div class="plusfourth">
+      <div id = 'pluses' class="plusfourth">
           <p>+</p>
       </div>
   
@@ -92,17 +114,23 @@
           <img src="/images/goldengoose.jpg" alt=""/>
       </div>
 
+      <div class="look5about">
+        <h2>Athleisure</h2>
+        <p>Biker shorts sets never fail. Wear this simple set with some chunky athletic sneakers for a casual, sporty look.</p>
+      </div>
+
       <div class="topfifth">
         <img src="/images/bikershortsset.jpg" alt=""/>
       </div>
   
-      <div class="plusfifth">
+      <div id = 'pluses' class="plusfifth">
           <p>+</p>
       </div>
   
       <div class="bottomfifth">
           <img src="/images/balenciagasneakers.jpg" alt=""/>
       </div>
+    </div>
 
 
   </main>
@@ -110,5 +138,15 @@
     <p>Made By Gillian Wasserman <br/>
       &copy; SI 339 2020-2021</p>
   </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
   </body>
 </html>
