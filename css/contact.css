@@ -21,6 +21,7 @@ body {
   h2{
     font-size: 32px;
     line-height: 1.5;
+    text-align: center;
   }
   
 /*New nav code*/
@@ -36,6 +37,10 @@ body {
 
 .topnav #myLinks {
   display: none;
+}
+
+p{
+  text-align: center;
 }
 
 .topnav a {
@@ -134,7 +139,7 @@ body {
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     text-align: center;
-    background-image: url("/images/marble.jpg");
+    background-image: url("../images/marble.jpg");
     overflow: hidden;
     height: 300px;
   }
@@ -201,7 +206,12 @@ body {
     opacity: 0.8;
   }
   
-  
+  .bye{
+    padding: 30px;
+  }
+
+
+
   @media all and (min-width: 800px){
     nav{
       padding: 30px 0px;
