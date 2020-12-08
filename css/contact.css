@@ -24,6 +24,16 @@ body {
     text-align: center;
   }
   
+  .nameoficon{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    display: none;
+ }
+
 /*New nav code*/
 .bignav{
   display: none;
