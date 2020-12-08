@@ -21,6 +21,43 @@ h2{
   line-height: 1.5;
 }
 
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #851e1e;
+  color: black;
+}
+
 nav li{
   display:inline;
   padding-right:20px;
@@ -78,6 +115,11 @@ nav{
   text-decoration: underline;
 }
 
+.bignav{
+  display: none;
+}
+
+
 footer{
   background-color: black;
   color: white;
@@ -98,9 +140,87 @@ footer{
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  
 
 }
+
+.maincontainer{
+  position: relative;
+  width: 250px;
+  height: 340px;
+  background:white;
+  padding: 0 0 50px 0;
+  margin: 25px;
+}
+
+.thecard{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+}
+
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+.maincontainr:hover .thecard,
+.maincontainer:focus-within .thecard,
+.maincontainer:active .thecard,
+.flip-card:focus .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.card1 {
+  position: absolute;
+  background: #fff;
+  /*Your code here.*/
+  /*Take a look at flex-basis*/
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  backface-visibility: hidden;
+}
+
+.card1 > img{
+  width: 100%;
+  object-fit: contain;
+}
+
+
+
+.go{
+  color: white;
+  vertical-align: middle;
+  font-size: 50pt;
+}
+
+.card1 > header{
+  background: tan;
+  border: 20px solid white;
+  padding: 20px 0;
+  height: 80px;
+  text-align: center;
+  font-size: 7pt;
+}
+
+.card1 > header > p{
+  align-self: center;
+  font-size: 12pt;
+
+}
+
+.theback{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: tan;
+  color: #fff;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
 
 .card {
   margin: 12px;
@@ -155,7 +275,6 @@ footer{
 
 
 .intro{
-  /*Your Code Here*/
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: 100%;       /* Parallax effect */
@@ -187,6 +306,45 @@ footer{
   align-self: center;
 }
 
+.gridcontainer{
+  grid-template-columns: 1;
+  grid-template-rows: 3;
+}
+
+.black{
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.female{
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.lgbt{
+  grid-row: 3;
+  grid-column: 1;
+}
+
+
+.blackowned{
+  padding: 30px 30px;
+  color: black;
+  text-align: left;
+  background-color: white;
+}
+
+.minoritylist {
+  list-style-type: none;
+}
+
+ul.minoritylist li::before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Free";
+  padding: 0 10px 0 0;
+}
+
+
 
 @media all and (min-width: 800px){
   nav{
@@ -194,6 +352,14 @@ footer{
     /*Your code here:*/
     text-align: right;
     vertical-align: middle;
+  }
+
+  .bignav{
+    display: block;
+  }
+
+  .topnav{
+    display: none;
   }
 
   .container{
@@ -234,3 +400,73 @@ preferences to reduce motion.*/
     background-attachment: initial;
   }
 }
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+  
+  .bignav {
+    padding: 30px 0px;
+    text-align: right;
+    vertical-align: middle;
+    background-color: white;
+  }
+
+  .gridcontainer{
+    display: grid;
+    grid-template-columns: 3;
+  }
+  
+  #black{
+    grid-column: 1;
+  }
+  
+  #female{
+    grid-column: 2;
+  }
+  
+  #lgbt{
+    grid-column: 3;
+  }
+
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+  
+    .bignav {
+      padding: 30px 0px;
+      text-align: center;
+      vertical-align: middle;
+      background-color: white;
+    }
+    /* CSS */
+    h2.mintitle {
+      font-size: 13pt;
+    }
+
+    .maincontainer{
+      width: 200px;
+    }
+
+    .theback a{
+      font-size: 25pt;
+    }
+
+    .gridcontainer{
+      display: grid;
+      grid-template-columns: 3;
+    }
+    
+    #black{
+      grid-column: 1;
+    }
+    
+    #female{
+      grid-column: 2;
+    }
+    
+    #lgbt{
+      grid-column: 3;
+    }
+  }
