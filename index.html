@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://kit.fontawesome.com/35c1879a66.js" crossorigin="anonymous"></script>
     <title>Style Website</title>
   </head>
   <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
-    <nav>
+    <nav class="bignav">
       <ul>
         <li><a class='current' href="index.html">Home</a></li>
         <li><a href="brands.html">Brands</a></li>
@@ -17,13 +18,26 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
       </nav>
-    <main class="container">
-      
-    <header id="main">
-      
-    </header>
-    
 
+
+      <div class="topnav">
+        <a href="index.html" class="active">The Style Guide Home</a>
+        <div id="myLinks">
+          <a href="brands.html">Brands</a>
+          <a href="outfits.html">Outfits</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+    
+      <header id="main" class="fade-in"></header>
+
+
+      <main class="container">
+      
     <div class="welcome">
       <h1>Style Guide</h1>
       <p>Welcome to the Style Guide. Helping you be the coolest version of you with style that's</p>
@@ -68,5 +82,15 @@
     <p>Made By Gillian Wasserman <br/>
       &copy; SI 339 2020-2021</p>
   </footer>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
   </body>
 </html>
